@@ -48,6 +48,9 @@ def request_gpt(system_prompt, user_prompt):
 # UI
 st.title('CV Scoring App')
 
+# 💡 Показываем, сколько попыток осталось
+st.info(f"Осталось попыток: {st.session_state.launches_left}")
+
 job_url = st.text_area('Введите ссылку на вакансию')
 resume_url = st.text_area('Введите ссылку на резюме')
 
